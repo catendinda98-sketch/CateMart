@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CateMart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">CateMart</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+    </nav>
+
+    <input id="searchInput" class="search-box"
+           type="search" placeholder="Search products..."
+           aria-label="Search products">
+</header>
+
+<main>
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="content-box">
+
+        <h3>Get in Touch</h3>
+
+        <p>Have a question? Send us a message using the form below.</p>
+
+        <form onsubmit="sendMessage(event)">
+
+            <input type="text" id="contactName"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="contactEmail"
+                   placeholder="Your Email" required>
+
+            <input type="text" id="contactSubject"
+                   placeholder="Subject" required>
+
+            <textarea id="contactMessage"
+                      placeholder="Write your message..."
+                      required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <p id="contactResponse" class="message"></p>
+
+        <h3>Contact Information</h3>
+
+        <p>Email: support@catemart.example</p>
+        <p>Phone: +254 700 000 000</p>
+        <p>Location: Kenya</p>
+
+    </div>
+
+</main>
+
+<footer>
+    <h2>CateMart</h2>
+    <p>Your online shopping destination.</p>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; 2026 CateMart. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
