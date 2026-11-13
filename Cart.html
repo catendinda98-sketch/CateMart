@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | CateMart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">CateMart</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+    </nav>
+
+    <input id="searchInput" class="search-box"
+           type="search" placeholder="Search products..."
+           aria-label="Search products">
+</header>
+
+<main>
+
+    <h2 class="section-title">My Shopping Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+
+        <h3>Total: <span id="cartTotal">KSh 0</span></h3>
+
+        <a class="button" href="checkout.html">
+            Proceed to Checkout
+        </a>
+
+        <a class="button" href="products.html">
+            Continue Shopping
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+    <h2>CateMart</h2>
+    <p>Your online shopping destination.</p>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; 2026 CateMart. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
