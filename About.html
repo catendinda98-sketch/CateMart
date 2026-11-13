@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | CateMart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">CateMart</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+    </nav>
+
+    <input id="searchInput" class="search-box"
+           type="search" placeholder="Search products..."
+           aria-label="Search products">
+</header>
+
+<main>
+
+    <div class="form-container">
+
+        <h2>Create an Account</h2>
+
+        <form onsubmit="registerUser(event)">
+
+            <input type="text" id="registerName"
+                   placeholder="Full Name" required>
+
+            <input type="email" id="registerEmail"
+                   placeholder="Email Address" required>
+
+            <input type="tel" id="registerPhone"
+                   placeholder="Phone Number" required>
+
+            <input type="password" id="registerPassword"
+                   placeholder="Create Password"
+                   minlength="6" required>
+
+            <input type="password" id="confirmPassword"
+                   placeholder="Confirm Password"
+                   minlength="6" required>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <p id="registerMessage" class="message"></p>
+
+        <p>Already registered?
+            <a href="login.html">Login here</a>
+        </p>
+
+    </div>
+
+</main>
+
+<footer>
+    <h2>CateMart</h2>
+    <p>Your online shopping destination.</p>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; 2026 CateMart. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
